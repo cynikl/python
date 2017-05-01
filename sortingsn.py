@@ -5,6 +5,7 @@
 # line 39 modified 2017-04-20, by Wade Robson, on slack macadmins
 import argparse
 
+
 Help_Message = """
 -------------------------------------------------------------------------'
 Cyril Niklaus (cyril.niklaus@artcomputer.ch) 2017-04-20
@@ -22,6 +23,8 @@ Par défaut le programme va les enregistrer dans le dossier où il se trouve.
 parser = argparse.ArgumentParser(description=Help_Message, formatter_class=argparse.RawTextHelpFormatter)
 args = parser.parse_args()
 
+
+
 wordlist = list()
 try:
     fname = raw_input("Saissisez le nom du fichier CSV à traiter: ")
@@ -33,7 +36,7 @@ except:
 outputfilename = raw_input("Saissisez le nom du fichier à sauvegarder: ") +".txt"
 
 for line in fhand:
-    line = line.rstrip()
+    line = ' '.join(line.rstrip().split('\n'))
     if line == '' : continue
     # split is for strings
     wordlist.append(line.split()[0])
