@@ -36,7 +36,7 @@ except:
 outputfilename = raw_input("Saissisez le nom du fichier à sauvegarder: ") +".txt"
 
 for line in fhand:
-    line = ' '.join(line.rstrip().split('\n'))
+    line = line.rstrip()
     if line == '' : continue
     # split is for strings
     wordlist.append(line.split()[0])
