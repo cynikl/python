@@ -1,0 +1,1 @@
+ Just a quick script to sort serial numbers, check for duplicates and remove the prefixed S.
