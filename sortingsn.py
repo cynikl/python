@@ -7,7 +7,7 @@ import argparse
 
 HELP_MESSAGE = """
 -------------------------------------------------------------------------'
-Cyril Niklaus (cyril.niklaus@artcomputer.ch)
+Cyril Niklaus (cyril.niklaus@company.com)
 
 Ce programme aide à la correction de la saisie des numéros de série
 pour le DEP. Il va enlever le S qui préfixe les numéros scannés et aussi
